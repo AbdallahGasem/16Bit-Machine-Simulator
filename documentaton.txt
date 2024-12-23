@@ -1,0 +1,35 @@
+## Documentation for Machine Vole Simulator
+
+This document provides an overview of the `Task_3 Machine Vole Simulator` code, written in C++. It details the purpose, functionality, and components of the code, offering a comprehensive understanding of how it works.
+
+**1. Purpose:**
+
+* This code implements a simulation for the Vole machine, a fictional architecture used in educational settings to teach computer science concepts like machine language and instruction execution.
+* The simulator allows users to:
+    * Load instructions from a file.
+    * Execute instructions stored in the machine's RAM.
+    * View the contents of RAM and registers.
+
+**2. Functionality:**
+
+* The code simulates the Vole machine's instruction set, which includes operations for:
+    * Loading data from memory into registers.
+    * Storing data from registers to memory.
+    * Performing arithmetic operations and comparisons.
+    * Transferring data between registers.
+    * Conditional branching based on register values.
+* The simulator tracks the state of the machine, including the program counter, registers, and RAM contents.
+* Users can interact with the simulator through functions for loading instructions, executing instructions, and inspecting the machine's state.
+
+**3. Components:**
+
+* The code is structured into several classes and functions:
+    * `Machine` class: This class represents the Vole machine itself. It contains attributes for the machine's components, such as RAM, registers, instruction register, and instruction set. It also includes functions for loading instructions, executing instructions, and reading RAM and registers.
+    * `decimal_to_hex` function: This function converts a decimal number to its equivalent hexadecimal string representation. It is used in various parts of the code, such as when displaying the contents of RAM and registers.
+    * `main` function: This function serves as the entry point for the program. It creates a `Machine` object, calls functions to load instructions and execute them, and then displays the contents of RAM and registers.
+
+**4. Additional Notes:**
+
+* The code includes comments throughout to explain the functionality of different parts.
+* Some sections of the code are marked as "TESTED," indicating that they have been tested and confirmed to work correctly.
+* The code appears to be well-organized and modular, making it easier to understand and maintain.
